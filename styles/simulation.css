@@ -1,0 +1,114 @@
+body{
+background: #ee9ca7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ee9ca7, #ffdde1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
+
+.mainwindow{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.clippertypes{
+   height: 40px;
+   width: 350px;
+   padding: 5px;
+}
+
+.graph{
+   position:absolute;
+   left: 700px;
+   top: 80px;
+}
+
+.circuit{
+    position: absolute;
+    left:50px;
+}
+
+.types{
+    margin: 20px auto 20px 500px;
+}
+
+.diagram{
+    height: 350px;
+    width: 550px;
+}
+
+.but{
+    border-color: black;
+    border-radius: 10px;
+    padding: 3px;
+    width: 50px;
+}
+
+.conbut {
+    border-color: black;
+    border-radius: 10px;
+    padding: 3px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.coninput{
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+}
+
+.controls{
+    position: absolute;
+    top: 430px;
+    left: 100px;
+}
+
+.explainbox{
+    background-color: #9772FB;
+    position: absolute;
+    top: 430px;
+    left: 700px;
+    height: fit-content;
+    width: 500px;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: blueviolet;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.datasheet{
+    position: absolute;
+    top: 725px;
+    left: 850px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: crimson;
+    font-size: large;
+    font-weight: bolder;
+    z-index: 10;
+}
+
+.verify{
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color:green;
+    background-color: lavenderblush;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.incrct{
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: red;
+    background-color:coral;
+    font-weight: bolder;
+    text-align: center;
+}

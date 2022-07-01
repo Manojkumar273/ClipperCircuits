@@ -1,0 +1,42 @@
+.heading{
+    padding: 10px;
+    text-align: center;
+}
+
+.intro{
+    padding: 10px;
+    font-size: large;
+    font-weight:500;
+}
+
+.types{
+    padding: 10px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.series{
+    padding: 10px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.shunt{
+    padding: 10px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.img{
+    margin-left: 350px;
+    padding-bottom: 10px;
+}
+
+body{
+    background: #2193b0;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #6dd5ed, #2193b0);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

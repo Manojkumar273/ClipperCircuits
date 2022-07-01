@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Clipper Circuits</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <img src="images/Thiagarajar_College_of_Engineering_logo.png" alt="logo" width="60" height="60">
+            <h5 class="m-3">TCE Virtual Labs</h5>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ms-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link m-2 menu-item nav-active">AIM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="prequiz.html" class="nav-link m-2 menu-item nav-active">PREQUIZ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="theory.html" class="nav-link m-2 menu-item nav-active">THEORY</a>
+                </li>
+                <li class="nav-item">
+                    <a href="simulation.html" class="nav-link m-2 menu-item nav-active">SIMULATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="prequiz.html" class="nav-link m-2 menu-item nav-active">POSTQUIZ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">FEEDBACK</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="quiz-container">
+        <div id="question-container">
+            <div id="question">Answer all the following questions</div>
+            <div id="image" class="hide">
+                <img class="crctimg" src="images/checked.png" alt="crctimage">
+            </div>
+            <div id="answer-buttons" class="btn-grid hide">
+                <button id="ans1" class="butt" onclick="choice1()">Answer 1</button>
+                <br>
+                <button id="ans2" class="butt" onclick="choice2()">Answer 2</button>
+                <br>
+                <button id="ans3" class="butt" onclick="choice3()">Answer 3</button>
+                <br>
+                <button id="ans4" class="butt" onclick="choice4()">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn butt" onclick="startQuiz()">Start</button>
+            <button id="next-btn" class="next-btn butt hide" onclick="nextQues()">Next</button>
+            <button id="submit-btn" class="submit-btn butt hide" onclick="submitQuiz()">Submit</button>
+            <button id="retry-btn" class="submit-btn butt hide" onclick="retry()">Retry</button>
+        </div>
+    </div>
+    <script src="js/prequizques.js"></script>
+    <script src="js/prequiz.js"></script>
+</body>
+</html>

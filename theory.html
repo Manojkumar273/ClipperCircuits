@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/theory.css">
+    <title>Clipper Circuits</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <img src="images/Thiagarajar_College_of_Engineering_logo.png" alt="logo" width="60" height="60">
+            <h5 class="m-3">TCE Virtual Labs</h5>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ms-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link m-2 menu-item nav-active">AIM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="prequiz.html" class="nav-link m-2 menu-item nav-active">PREQUIZ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="theory.html" class="nav-link m-2 menu-item nav-active">THEORY</a>
+                </li>
+                <li class="nav-item">
+                    <a href="simulation.html" class="nav-link m-2 menu-item nav-active">SIMULATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="postquiz.html" class="nav-link m-2 menu-item nav-active">POSTQUIZ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">FEEDBACK</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1>CLIPPER CIRCUITS</h1>
+    </div>
+    <div class="intro">
+        <p>Clipper circuits are the electronic circuits that clip off or remove a portion of an AC signal, without causing any
+        distortion to the remaining part of the waveform. These are also known as clippers, clipping circuits, limiters,
+        slicers, etc</p>
+        
+        <p>The main component of a clipper circuit is a diode or any other type of diode. The diode clips a portion from the input
+        waveform. The shape of the waveform depends on the configuration as well as the design of the circuit.</p>
+    </div>
+    <div class="types">
+        <h3>Types of Clipper Cicuits based on diode :</h3>
+        <ul>
+            <li>Series Diode Clippers</li>
+            <li>Shunt Diode Clippers</li>
+        </ul>
+    </div>
+    <div class="series">
+        <h3>Series Diode Clippers</h3>
+        <p>In series clipper circuits, the diode is connected in series with the output. In such clippers, the input signal appears
+        at the output when the diode is forward biased and conducting. On the contrary, the shunt clippers passes the input
+        signal when the diode is reverse biased or blocking.</p>
+        
+        <p>It is divided into positive and negative clippers.</p>
+        <div class="sposi">
+            <h3>Series Positive Clippers</h3>
+
+            <p>Series positive clippers remove or clips the positive half of the waveform. In a series positive clipper, the diode is
+            in reverse biased and in series with the output as shown in the figure below.</p>
+
+            <img class="img" src="images/Series-Positive-Clipper.png" alt="series positive clipper">
+
+            <p>The input signal Vi is applied at the input side while the output is taken at the load resistor. During the positive
+            half cycle of the input, the voltage at point A is positive than point B. So the diode is in reverse bias and there is
+            no current conduction. The input signal cannot pass, thus there is no voltage drop at the Rl. Therefore, there the
+            positive half cycle does not appear at the output as shown in the figure.</p>
+
+            <p>the negative half-cycle, the voltage at point A is negative than point B. The diode becomes forward bias and the
+            signal pass through it. The signal appears across the Rl. Therefore, the negative half cycle passes through the circuit
+            and appears at the output.</p>
+        </div>
+        <div class="sneg">
+            <h3>Series Negative Clippers</h3>
+            
+            <p>The series negative clipper circuit clips the negative half of the input cycle. its circuit diagram is given below.</p>
+            
+            <img class="img"  src="images/Series-Negative-Clipper.png" alt="series negative clipper">
+            
+            <p>During positive half cycle, the diode is forward biased due to the input voltage. Therefore, the input signal passes
+            through the diode and appears at the output.</p>
+            
+            <p>During the negative half cycle, the diode becomes reverse-biased and it does not conduct. Therefore, there is no voltage
+            at the output and the negative half cycle is clipped from the input waveform.</p>
+        </div>
+        <div class="shunt">
+            <h3>Shunt Clippers</h3>
+            <p>In shunt clippers, the diode is connected in parallel with the output. The input signal appears the output when the
+            diode is blocking as opposed to the series clippers.</p>
+            
+            <p>It is divided into positive and negative clippers.</p>
+            <div class="pposi">
+                <h3>Shunt Positive Clippers</h3>
+
+                <p>The shunt positive clipper clips the positive half cycle of the input waveform. The circuit diagram of the shunt
+                positive clipper is given below</p>
+
+                <img class="img"  src="images/Shunt-Positive-Clipper.png" alt="Shunt positive clipper">
+
+                <p>During the positive half cycle, the diode is forward biased as the voltage at point A is greater than point B. so the
+                diode conducts the input signal and there is no voltage difference at the output.</p>
+                
+                <p>During the negative half-cycle, the voltage polarity of the input signal at points A and B reverses and the diode
+                becomes reverse biased. Therefore, the diode blocks the input signal and the signal voltage appears across the diode
+                that is taken as the output of the clipper.</p>
+                
+                <p>such a way, the shunt positive clippers, clips or remove, the positive half of the input cycle and allow the negative
+                half cycle.</p>
+
+            </div>
+            <div class="pneg">
+                 <h3>Shunt Negative Clippers</h3>
+                 <p>The shunt negative clipper clips the negative half of the input waveform. The circuit diagram is given below</p>
+
+                 <img  class="img" src="images/Shunt-Negative-Clipper.png" alt="Shunt negative clipper">
+
+                 <p>During the positive half cycle, the diode is reversed biased, thus it blocks the signal that appears across it.
+                therefore, the positive half also appears at the output.</p>
+
+                 <p>During the negative half cycle, the diode is forward biased and it conducts the signal. Therefore, there is no voltage
+                at the output for the negative half cycle. Thus the shunt negative clipper clips or removes the negative half of the
+                input waveform.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
